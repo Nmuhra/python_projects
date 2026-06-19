@@ -14,8 +14,7 @@ map = {
     's': '✂️'
 }
 
-## Declared as a tuple so that it is read only 
-options = ('r','p','s')
+options = tuple(map.keys())
 
 while True:
     cpuChoice = random.choice(options)

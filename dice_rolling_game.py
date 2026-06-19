@@ -13,8 +13,8 @@ while(choice == 'y'):
 
 if(choice != 'y' and choice != 'n'):
     print("Invalid input!")
-
-print("Thanks for playing!")
+else:
+    print("Thanks for playing!")
 
 
 
