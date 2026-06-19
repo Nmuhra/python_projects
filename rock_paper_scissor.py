@@ -1,18 +1,23 @@
 import random
 
+
+ROCK = 'r'
+PAPER = 'p'
+SCISSORS = 's'
+
+map = {
+     ROCK : '🪨',
+    PAPER: '📃',
+    SCISSORS: '✂️'
+}
+
 def rules(x,y):
     if x == y:
         print('Draw\n')
-    elif (x == 'r' and y == 's') or (x == 'p' and y == 'r') or (x == 's' and y == 'p'):
+    elif (x == ROCK and y == SCISSORS) or (x == PAPER and y == ROCK) or (x == SCISSORS and y == PAPER):
         print('You Win!\n')
     else:
         print('You lose!\n')
-
-map = {
-    'r': '🪨',
-    'p': '📃',
-    's': '✂️'
-}
 
 options = tuple(map.keys())
 
